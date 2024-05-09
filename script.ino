@@ -1,9 +1,6 @@
 #include<Arduino.h>
-int trig = 9;
-int echo = 10;
-int b = 7;
+int trig = 9, trig1 = 5, echo = 10, echo1 = 6, dis, b = 7;
 long dura;
-int dis;
 void setup() {
   Serial.begin(9600);
   pinMode(echo, INPUT);
