@@ -27,7 +27,7 @@ void loop() {
   dis1 = dura1 * 0.034/2;
   Serial.print("Distance: ");
   Serial.println(dis, dis1);
-  delay(500);
+  delay(1000);
   if(dis<=1100 && dis<=1100){
     digitalWrite(b,HIGH);
   }
