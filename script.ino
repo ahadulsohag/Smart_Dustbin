@@ -1,6 +1,7 @@
 #include<Arduino.h>
 int trig = 9, trig1 = 5, echo = 10, echo1 = 6, dis, b = 7, dis1;
 long dura, dura1;
+bool a = 0;
 void setup() {
   Serial.begin(9600);
   pinMode(echo, INPUT);
@@ -30,5 +31,7 @@ void loop() {
   delay(1000);
   if(dis<=1100 && dis<=1100){
     digitalWrite(b,HIGH);
+  }else{
+    a = 1;
   }
 }
